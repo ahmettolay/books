@@ -1,0 +1,27 @@
+#Bütün kitapları Al
+GET http://localhost:3001/books HTTP/1.1
+Content-Typle: application/json
+
+###
+#Kitap ekle
+POST http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+{
+"title":"Harry Potter"
+}
+
+
+###
+#Kitap Günceller
+PUT http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"Kara Kule"
+}
+
+###
+#Kitap Sil
+DELETE http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
